@@ -691,7 +691,7 @@ sub Extract_Cmd_Line
         : '')
         . (
         defined $conf->{output}
-        ? qq[ --output "] . quotemeta($conf->{output}) . qq["]
+        ? qq[ --output "] . $conf->{output} . qq["]
         : '');
 
     return ($cmd);
